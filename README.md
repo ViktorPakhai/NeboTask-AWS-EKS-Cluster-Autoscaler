@@ -39,3 +39,4 @@ Clean up:
 kubectl delete -f ./k8s/
 
 eksctl delete cluster -f eks-cluster.yaml --profile private
+---
