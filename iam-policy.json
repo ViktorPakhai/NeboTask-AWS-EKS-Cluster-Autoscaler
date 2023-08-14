@@ -9,11 +9,15 @@
                 "autoscaling:DescribeTags",
                 "autoscaling:SetDesiredCapacity",
                 "autoscaling:TerminateInstanceInAutoScalingGroup",
+                "autoscaling:DescribeScalingActivities",
+                "ec2:DescribeInstanceTypes",
+                "ec2:DescribeImages",
+                "ec2:GetInstanceTypesFromInstanceRequirements",
+                "eks:DescribeNodegroup",
                 "ec2:DescribeLaunchTemplateVersions"
             ],
             "Resource": "*",
             "Effect": "Allow"
         }
     ]
-  }
-
+}

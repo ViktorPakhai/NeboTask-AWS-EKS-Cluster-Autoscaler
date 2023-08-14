@@ -6,7 +6,7 @@ metadata:
     k8s-addon: cluster-autoscaler.addons.k8s.io
     k8s-app: cluster-autoscaler
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::882166133385:role/AmazonEKSClusterAutoscalerRole
+    eks.amazonaws.com/role-arn: arn:aws:iam::882166133385:role/NeboTaskAmazonEKSClusterAutoscalerRole
   name: cluster-autoscaler
   namespace: kube-system
 
@@ -140,7 +140,7 @@ spec:
     spec:
       serviceAccountName: cluster-autoscaler
       containers:
-        - image: k8s.gcr.io/autoscaling/cluster-autoscaler:v1.26.0
+        - image: k8s.gcr.io/autoscaling/cluster-autoscaler:v1.25.0
           name: cluster-autoscaler
           resources:
             limits:
